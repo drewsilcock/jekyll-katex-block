@@ -3,11 +3,9 @@ jekyll-katex-block
 
 KaTeX is the new development from Khan Academy for super fast mathematics typesetting on your website. It renders your equations into pure CSS and HTML using a small JS file, making it orders of magnitude faster than the mainstream alternative, [MathJax](http://www.mathjax.org/).
 
-This small plugin integrates KaTeX into your Jekyll website utilising Liquid blocks, so rendering an equation is as simple as writing `{% latex %} equation {% endlatex %}`. It is intended to be lightweight and add no appreciable rendering time to your site, even if you've got many equations.
+This small plugin integrates KaTeX into your Jekyll website utilising Liquid blocks, so rendering an equation is as simple as writing `{% latex %} equation {% endlatex %}`. It is intended to be lightweight and add no appreciable compilation time to your site, even if you have many equations.
 
 Because the KaTeX JavaScript is being run server-side through the `execjs` Ruby gem, you don't even need to include the KaTeX JS in the resulting web page, only the CSS and fonts!
-
-Given the promise of KaTeX to replace Mathjax, I'm quite surprised no-one else has produced a Jekyll plugin for it!
 
 Installation
 ------------
