@@ -1,4 +1,7 @@
 safe: false
 
+exclude:
+    - README.md
+
 katex:
     path_to_js: "./_assets/katex.min.js"
