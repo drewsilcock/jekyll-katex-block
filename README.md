@@ -12,6 +12,20 @@ Installation
 
 To install it, copy `katex_block.rb` into the `_plugins` folder of your Jekyll project.
 
+You can download the script directly by running
+
+```bash
+wget https://raw.githubusercontent.com/drewsberry/jekyll-katex-block/master/katex_block.rb
+mv katex_block.rb /path/to/your/site/_plugins/
+```
+
+Or by cloning the whole repo and copying it across
+
+```bash
+git clone https://github.com/drewsberry/jekyll-katex-block.git
+cp jekyll-katex-block/katex_block.rb /path/to/your/site/_plugins/
+```
+
 You also need the KaTeX CSS file, `katex.min.css`, and the KaTeX font files copied into your project. To download these and for more information, head over to [KaTeX GitHub Page](http://khan.github.io/KaTeX) and the [KaTeX source repo](https://github.com/Khan/KaTeX).
 
 For a fully working example, check out the `test` directory. It contains a minimal working example of using the plugin.
