@@ -46,8 +46,8 @@ module Jekyll
             end
 
             def katexify_centred(content)
-                div_open = "<span class='centredequation'>"
-                div_close = "</span>"
+                div_open = "<div style='text-align: center;'>"
+                div_close = "</div>"
 
                 s = "\\displaystyle " + content
 

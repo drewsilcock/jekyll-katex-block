@@ -29,18 +29,7 @@ If you also want to have centred equations, you can do:
 {% latex centred %} E = mc^2 {% endlatex %}
 ```
 
-Note that this requires you to have the following CSS included in your web page:
-
-```css
-span.centredequation {
-    margin: auto;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    display: table;
-}
-```
-
-What I do is just append this to my main stylesheet. If you're wondering why I didn't just `div` it, or use inline styles, they're escaped by Jekyll for some reason I'm not entirely sure. Maybe security reasons, although that seems silly.
+It's really as simple as that. This is intended to be a virtually weightless extension to your Jekyll blog that allows you to leverage the virtually weightless KaTeX CSS for incredibly fast and easy mathematics typesetting.
 
 Options
 -------
