@@ -1,7 +1,13 @@
 jekyll-katex-block
 ==================
 
-This is a Jekyll plugin that includes a `latex` Liquid tag that utilises the KaTeX web math typesetting system to generate equations server-side into pure HTML and CSS.
+KaTeX is the new development from Khan Academy for super fast mathematics typesetting on your website. It renders your equations into pure CSS and HTML using a small JS file, making it orders of magnitude faster than the mainstream alternative, [MathJax](http://www.mathjax.org/).
+
+This small plugin integrates KaTeX into your Jekyll website utilising Liquid blocks, so rendering an equation is as simple as writing `{% latex %} equation {% endlatex %}`. It is intended to be lightweight and add no appreciable rendering time to your site, even if you've got many equations.
+
+Because the KaTeX JavaScript is being run server-side through the `execjs` Ruby gem, you don't even need to include the KaTeX JS in the resulting web page, only the CSS and fonts!
+
+Given the promise of KaTeX to replace Mathjax, I'm quite surprised no-one else has produced a Jekyll plugin for it!
 
 Installation
 ------------
@@ -42,3 +48,8 @@ katex:
 ```
 
 The default value is `./public/js/katex.min.js`.
+
+Problems
+--------
+
+The only real problem is that being relatively new, KaTeX doesn't yet support all mathematical symbols that you might need. Several important PRs are in the works over at [https://github.com/Khan/KaTeX/pulls](https://github.com/Khan/KaTeX/pulls), in particular [#151](https://github.com/Khan/KaTeX/pull/151) which adds vital symbols like `\nabla`, `\imath`, `\hbar`, `\exists` and a load of others.
