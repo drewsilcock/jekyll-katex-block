@@ -35,7 +35,7 @@ Use
 
 To use it in a post, wrap your equation in a `latex` block as follows:
 
-```markdown
+```liquid
 {% latex %} E = mc^2 {% endlatex %}
 ```
 
@@ -43,7 +43,7 @@ And that's it!
 
 If you also want to have centred equations, you can do:
 
-```markdown
+```liquid
 {% latex centred %} E = mc^2 {% endlatex %}
 ```
 
