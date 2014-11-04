@@ -46,7 +46,8 @@ module Jekyll
             end
 
             def katexify_centred(content)
-                div_open = "<div style='text-align: center;'>"
+                style = "text-align: center; margin-top: 0.5em; margin-bottom: 0.5em;"
+                div_open = "<div style='#{style}'>"
                 div_close = "</div>"
 
                 s = "\\displaystyle " + content
