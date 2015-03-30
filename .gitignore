@@ -35,3 +35,9 @@ build/
 
 # Ignore the MWE generated site
 /test/_site
+
+# Vim files
+.*.swp
+
+# Backup files
+*~
