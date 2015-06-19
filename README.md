@@ -46,6 +46,7 @@ If you also want to have centred equations, you can do:
 ```liquid
 {% latex centred %} E = mc^2 {% endlatex %}
 ```
+Centred equations are rendered in `displaystyle` (large \int, \sum et c).
 
 It's really as simple as that. This is intended to be a virtually weightless extension to your Jekyll blog that allows you to leverage the virtually weightless KaTeX CSS for incredibly fast and easy mathematics typesetting.
 
